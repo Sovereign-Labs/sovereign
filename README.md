@@ -15,7 +15,7 @@
 
 ## NOTE: Early Access Program for Sovereign SDK
 
-To protect end-users against teams launching potentially insecure rollups at this alpha stage of Sovereign SDK, we’re continuing our development in a private repo. The SDK is always free and open-source, and once we get to testnet stage and iron out potential bugs, we will bring the updates to this main repo under the Apache 2.0 license. If you want to build on the latest version, please fill out our Early Partner Program form to get access or reach out on Twitter!
+To protect end-users against teams launching potentially insecure rollups at this alpha stage of Sovereign SDK, we’re continuing our development in a private repo. The SDK is always free and open-source, and once we get to testnet stage and iron out potential bugs, we will bring the updates to this main repo under the Apache 2.0 license. If you want to build on the latest version, please fill out our [Early Partner Program](https://airtable.com/shrPlG9rok3sVd8Mh) form or reach out on Twitter to get access!
 
 ## What is the Sovereign SDK?
 
