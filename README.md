@@ -13,6 +13,10 @@
   <img alt="GitHub Workflow Status (with event)" src="https://img.shields.io/github/actions/workflow/status/sovereign-labs/sovereign-sdk/prerelease_checks.yml?label=Pre-release%20checks">
 </div>
 
+## NOTE: Early Access Program for Sovereign SDK
+
+To protect end-users against teams launching potentially insecure rollups at this alpha stage of Sovereign SDK, we’re continuing our development in a private repo. The SDK is always free and open-source, and once we get to testnet stage and iron out potential bugs, we will bring the updates to this main repo. If you want to build on the latest version, please fill out our Early Partner Program form to get access.
+
 ## What is the Sovereign SDK?
 
 The Sovereign SDK is a free and open-source toolkit for building rollups (both ZK and optimistic) **that is currently under development**. Sovereign SDK consists of three
