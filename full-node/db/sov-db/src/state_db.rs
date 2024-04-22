@@ -127,7 +127,7 @@ impl<Q: QueryManager> StateDB<Q> {
         let next_version = largest_version
             .unwrap_or_default()
             .checked_add(1)
-            .expect("JMT Version overflow. Is is over");
+            .expect("JMT Version overflow. It is over");
         Ok(next_version)
     }
 }

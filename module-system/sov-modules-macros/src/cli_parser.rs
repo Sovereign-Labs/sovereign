@@ -153,7 +153,7 @@ impl CliParserMacro {
             generics_with_inner.split_for_impl();
 
         // Generics identical to generics_with_inner, but with the `__Inner` type renamed to `__Dest`.
-        // This type is used in the the try_map conversion
+        // This type is used in the try_map conversion
         let generics_for_dest = {
             let mut generics = generics.clone();
             generics.params.insert(0, syn::parse_quote! {__Dest});
