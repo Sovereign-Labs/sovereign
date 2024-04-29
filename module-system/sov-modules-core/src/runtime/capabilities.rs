@@ -4,7 +4,7 @@
 //! If you don't want to provide these capabilities,
 //! you can bypass the Sovereign module-system completely
 //! and write a state transition function from scratch.
-//! [See here for docs](https://github.com/Sovereign-Labs/sovereign-sdk/blob/nightly/examples/demo-stf/README.md)
+//! [See here for docs](https://github.com/Sovereign-Labs/sovereign-sdk/blob/nightly/examples/demo-simple-stf/README.md)
 
 use sov_rollup_interface::da::{BlobReaderTrait, DaSpec};
 
