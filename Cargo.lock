@@ -1308,7 +1308,7 @@ version = "0.1.0"
 source = "git+https://github.com/eigerco/celestia-node-rs.git?rev=66b7c6c#66b7c6cd58213c0cbf79207ba549cef82764ddca"
 dependencies = [
  "anyhow",
- "prost 0.12.3",
+ "prost 0.12.6",
  "prost-build",
  "prost-types 0.12.3",
  "serde",
@@ -4005,7 +4005,7 @@ dependencies = [
  "bytes",
  "hex",
  "informalsystems-pbjson",
- "prost 0.12.3",
+ "prost 0.12.6",
  "ripemd",
  "serde",
  "sha2 0.10.8",
@@ -6342,12 +6342,12 @@ dependencies = [
 
 [[package]]
 name = "prost"
-version = "0.12.3"
+version = "0.12.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "146c289cda302b98a28d40c8b3b90498d6e526dd24ac2ecea73e4e491685b94a"
+checksum = "deb1435c188b76130da55f17a466d252ff7b1418b2ad3e037d127b94e3411f29"
 dependencies = [
  "bytes",
- "prost-derive 0.12.3",
+ "prost-derive 0.12.6",
 ]
 
 [[package]]
@@ -6364,7 +6364,7 @@ dependencies = [
  "once_cell",
  "petgraph",
  "prettyplease",
- "prost 0.12.3",
+ "prost 0.12.6",
  "prost-types 0.12.3",
  "regex",
  "syn 2.0.41",
@@ -6387,9 +6387,9 @@ dependencies = [
 
 [[package]]
 name = "prost-derive"
-version = "0.12.3"
+version = "0.12.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "efb6c9a1dd1def8e2124d17e83a20af56f1570d6c2d2bd9e266ccb768df3840e"
+checksum = "81bddcdb20abf9501610992b6759a4c888aef7d1a7247ef75e2404275ac24af1"
 dependencies = [
  "anyhow",
  "itertools 0.11.0",
@@ -6413,7 +6413,7 @@ version = "0.12.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "193898f59edcf43c26227dcd4c8427f00d99d61e95dcde58dabd49fa291d470e"
 dependencies = [
- "prost 0.12.3",
+ "prost 0.12.6",
 ]
 
 [[package]]
@@ -7461,7 +7461,7 @@ dependencies = [
  "log",
  "num-derive 0.4.1",
  "num-traits",
- "prost 0.12.3",
+ "prost 0.12.6",
  "prost-build",
  "protobuf-src",
  "rayon",
@@ -8633,7 +8633,7 @@ dependencies = [
  "pin-project",
  "postcard",
  "proptest",
- "prost 0.12.3",
+ "prost 0.12.6",
  "risc0-zkvm",
  "risc0-zkvm-platform",
  "serde",
@@ -10306,7 +10306,7 @@ dependencies = [
  "instant",
  "num-traits",
  "once_cell",
- "prost 0.12.3",
+ "prost 0.12.6",
  "prost-types 0.12.3",
  "serde",
  "serde_bytes",
@@ -10359,7 +10359,7 @@ dependencies = [
  "flex-error",
  "num-derive 0.3.3",
  "num-traits",
- "prost 0.12.3",
+ "prost 0.12.6",
  "prost-types 0.12.3",
  "serde",
  "serde_bytes",
