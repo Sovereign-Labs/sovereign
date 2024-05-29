@@ -1,11 +1,7 @@
 //! This module implements the `ZkvmGuest` trait for the RISC0 VM.
 #[cfg(not(target_os = "zkvm"))]
-use std::ops::DerefMut;
-
 #[cfg(target_os = "zkvm")]
-use risc0_zkvm::guest::env;
 #[cfg(not(target_os = "zkvm"))]
-use risc0_zkvm::serde::{Deserializer, WordRead};
 use serde::de::DeserializeOwned;
 use serde::Serialize;
 use sov_rollup_interface::zk::{Zkvm, ZkvmGuest};
@@ -13,13 +9,13 @@ use sov_rollup_interface::zk::{Zkvm, ZkvmGuest};
 use crate::Risc0MethodId;
 
 #[cfg(target_os = "zkvm")]
-impl ZkvmGuest for Risc0Guest {
+impl ZkvmGuest for SuccinctGuest {
     fn read_from_host<T: serde::de::DeserializeOwned>(&self) -> T {
-        env::read()
+        sp1_zkvm::io::read::<T>()
     }
 
     fn commit<T: serde::Serialize>(&self, item: &T) {
-        env::commit(item);
+        sp1_zkvm::io::commit(item);
     }
 }
 
