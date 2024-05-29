@@ -117,7 +117,7 @@ risc0-zkvm-platform = { version = "0.19" }
 risc0-zkp = "0.19"
 risc0-circuit-rv32im = "0.19"
 risc0-build = "0.19"
-sp1-sdk = { git = "https://github.com/succinctlabs/sp1", tag = "v1.0.2-testnet" }
+sp1-sdk = { git = "https://github.com/succinctlabs/sp1", branch = "dev" }
 
 # EVM dependencies
 ethereum-types = "0.14.1"
