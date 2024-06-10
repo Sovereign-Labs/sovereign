@@ -182,15 +182,16 @@ dependencies = [
 
 [[package]]
 name = "anstream"
-version = "0.6.5"
+version = "0.6.14"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d664a92ecae85fd0a7392615844904654d1d5f5514837f471ddef4a057aba1b6"
+checksum = "418c75fa768af9c03be99d17643f93f79bbba589895012a80e3452a19ddda15b"
 dependencies = [
  "anstyle",
  "anstyle-parse",
  "anstyle-query",
  "anstyle-wincon",
  "colorchoice",
+ "is_terminal_polyfill",
  "utf8parse",
 ]
 
@@ -675,7 +676,7 @@ checksum = "8c3c1a368f70d6cf7302d78f8f7093da241fb8e8807c05cc9e51a125895a6d5b"
 name = "bashtestmd"
 version = "0.3.0"
 dependencies = [
- "clap 4.4.11",
+ "clap 4.5.6",
  "indoc",
  "markdown",
  "shell-escape",
@@ -1469,9 +1470,9 @@ dependencies = [
 
 [[package]]
 name = "clap"
-version = "4.4.11"
+version = "4.5.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "bfaff671f6b22ca62406885ece523383b9b64022e341e53e009a62ebc47a45f2"
+checksum = "a9689a29b593160de5bc4aacab7b5d54fb52231de70122626c178e6a368994c7"
 dependencies = [
  "clap_builder",
  "clap_derive",
@@ -1479,23 +1480,23 @@ dependencies = [
 
 [[package]]
 name = "clap_builder"
-version = "4.4.11"
+version = "4.5.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a216b506622bb1d316cd51328dce24e07bdff4a6128a47c7e7fad11878d5adbb"
+checksum = "2e5387378c84f6faa26890ebf9f0a92989f8873d4d380467bcd0d8d8620424df"
 dependencies = [
  "anstream",
  "anstyle",
  "clap_lex",
- "strsim 0.10.0",
+ "strsim 0.11.1",
 ]
 
 [[package]]
 name = "clap_derive"
-version = "4.4.7"
+version = "4.5.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "cf9804afaaf59a91e75b022a30fb7229a7901f60c755489cc61c9b423b836442"
+checksum = "c780290ccf4fb26629baa7a1081e68ced113f1d3ec302fa5948f1c381ebf06c6"
 dependencies = [
- "heck 0.4.1",
+ "heck 0.5.0",
  "proc-macro2 1.0.75",
  "quote 1.0.35",
  "syn 2.0.41",
@@ -1503,9 +1504,9 @@ dependencies = [
 
 [[package]]
 name = "clap_lex"
-version = "0.6.0"
+version = "0.7.1"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "702fc72eb24e5a1e48ce58027a675bc24edd52096d5397d4aea7c6dd9eca0bd1"
+checksum = "4b82cf0babdbd58558212896d1a4272303a57bdb245c2bf1147185fb45640e70"
 
 [[package]]
 name = "cobs"
@@ -1773,7 +1774,7 @@ dependencies = [
  "anes",
  "cast",
  "ciborium",
- "clap 4.4.11",
+ "clap 4.5.6",
  "criterion-plot",
  "is-terminal",
  "itertools 0.10.5",
@@ -2184,7 +2185,7 @@ version = "0.3.0"
 dependencies = [
  "anyhow",
  "borsh",
- "clap 4.4.11",
+ "clap 4.5.6",
  "demo-stf",
  "hex",
  "jsonrpsee 0.20.3",
@@ -3756,6 +3757,12 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "95505c38b4572b2d910cecb0281560f54b440a19336cbbcb27bf6ce6adc6f5a8"
 
 [[package]]
+name = "heck"
+version = "0.5.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "2304e00983f87ffb38b55b444b5e3b60a884b5d30c0fca7d82fe33449bbe55ea"
+
+[[package]]
 name = "hermit-abi"
 version = "0.1.19"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -4346,6 +4353,12 @@ dependencies = [
  "rustix 0.38.28",
  "windows-sys 0.48.0",
 ]
+
+[[package]]
+name = "is_terminal_polyfill"
+version = "1.70.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "f8478577c03552c21db0e2724ffb8986a5ce7af88107e6be5d2ee6e158c12800"
 
 [[package]]
 name = "itertools"
@@ -8362,7 +8375,7 @@ version = "0.3.0"
 dependencies = [
  "anyhow",
  "borsh",
- "clap 4.4.11",
+ "clap 4.5.6",
  "jsonrpsee 0.20.3",
  "schemars",
  "serde",
@@ -8502,7 +8515,7 @@ dependencies = [
  "anyhow",
  "arbitrary",
  "borsh",
- "clap 4.4.11",
+ "clap 4.5.6",
  "jsonrpsee 0.20.3",
  "proptest",
  "proptest-derive",
@@ -8575,7 +8588,7 @@ version = "0.3.0"
 dependencies = [
  "anyhow",
  "borsh",
- "clap 4.4.11",
+ "clap 4.5.6",
  "jsonrpsee 0.20.3",
  "schemars",
  "serde",
@@ -8595,7 +8608,7 @@ dependencies = [
  "anyhow",
  "bincode",
  "borsh",
- "clap 4.4.11",
+ "clap 4.5.6",
  "hex",
  "jmt",
  "jsonrpsee 0.20.3",
@@ -8734,7 +8747,7 @@ dependencies = [
  "async-trait",
  "bincode",
  "borsh",
- "clap 4.4.11",
+ "clap 4.5.6",
  "const-rollup-config",
  "criterion",
  "demo-stf",
@@ -8820,7 +8833,7 @@ dependencies = [
  "anyhow",
  "borsh",
  "bytes",
- "clap 4.4.11",
+ "clap 4.5.6",
  "derive_more",
  "ethereum-types",
  "ethers-contract",
@@ -8921,7 +8934,7 @@ dependencies = [
  "bech32",
  "bincode",
  "borsh",
- "clap 4.4.11",
+ "clap 4.5.6",
  "derive_more",
  "ed25519-dalek 2.0.0",
  "hex",
@@ -8984,7 +8997,7 @@ version = "0.3.0"
 dependencies = [
  "anyhow",
  "borsh",
- "clap 4.4.11",
+ "clap 4.5.6",
  "jsonrpsee 0.20.3",
  "proc-macro2 1.0.75",
  "quote 1.0.35",
@@ -9209,7 +9222,7 @@ dependencies = [
  "anyhow",
  "arbitrary",
  "borsh",
- "clap 4.4.11",
+ "clap 4.5.6",
  "jsonrpsee 0.20.3",
  "proptest",
  "proptest-derive",
@@ -9308,7 +9321,7 @@ version = "0.3.0"
 dependencies = [
  "anyhow",
  "borsh",
- "clap 4.4.11",
+ "clap 4.5.6",
  "jsonrpsee 0.20.3",
  "schemars",
  "serde",
@@ -9327,7 +9340,7 @@ version = "0.3.0"
 dependencies = [
  "anyhow",
  "borsh",
- "clap 4.4.11",
+ "clap 4.5.6",
  "jsonrpsee 0.20.3",
  "schemars",
  "serde",
@@ -9965,6 +9978,12 @@ name = "strsim"
 version = "0.10.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "73473c0e59e6d5812c5dfe2a064a6444949f089e20eec9a2e5506596494e4623"
+
+[[package]]
+name = "strsim"
+version = "0.11.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "7da8b5736845d9f2fcb837ea5d9e2628564b3b043a70948a3f0b778838c5fb4f"
 
 [[package]]
 name = "structopt"
