@@ -286,7 +286,7 @@ Most queries for ledger information accept an optional `QueryMode` argument. The
 There are several ways to uniquely identify items in the Ledger DB.
 
 - By _number_. Each family of structs (`slots`, `blocks`, `transactions`, and `events`) is numbered in order starting from `1`. So, for example, the
-  first transaction to appear on the DA layer will be numered `1` and might emit events `1`-`5`. Or, slot `17` might contain batches `41` - `44`.
+  first transaction to appear on the DA layer will be numbered `1` and might emit events `1`-`5`. Or, slot `17` might contain batches `41` - `44`.
 - By _hash_. (`slots`, `blocks`, and `transactions` only)
 - By _containing item_id and offset_.
 - (`Events` only) By _transaction_id and key_.
