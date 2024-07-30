@@ -19,7 +19,7 @@ All of Jupiter boils down to two trait implementations: [`DaVerifier`](https://g
 
 ### The DaVerifier Trait
 
-The DaVerifier trait is the simpler of the two core traits. Its job is to take a list of BlobTransactions from a DA layer block
+The DaVerifier trait is the simplest of the two core traits. Its job is to take a list of BlobTransactions from a DA layer block
 and verify that the list is _complete_ and _correct_. Once deployed in a rollup, the data verified by this trait
 will be passed to the state transition function, so non-determinism should be strictly avoided.
 
@@ -51,7 +51,7 @@ splitted into [`Compact Shares`](https://github.com/celestiaorg/celestia-app/blo
 and included in the data square under the [`PAY_FOR_BLOB_NAMESPACE`](https://github.com/celestiaorg/celestia-app/blob/main/specs/src/specs/namespace.md).
 
 Second, each submitted blob is split into the [`Sparse Shares`](https://github.com/celestiaorg/celestia-app/blob/main/specs/src/specs/shares.md#share-format)
-and also included in the data square, each blob under it's own namespace.
+and also included in the data square, each blob under its own namespace.
 
 The layout and structure of the `ExtendedDataSquare` is explained in [data square layout spec](https://github.com/celestiaorg/celestia-app/blob/main/specs/src/specs/data_square_layout.md#data-square-layout)
 and in the [data structures spec](https://github.com/celestiaorg/celestia-app/blob/main/specs/src/specs/data_structures.md#arranging-available-data-into-shares).
@@ -83,10 +83,10 @@ all of the data from a special reserved namespace on Celestia which contains the
 with the current block. The transactions are serialized using `protobuf` and encoded into data square in
 [compact share format](https://github.com/celestiaorg/celestia-app/blob/main/specs/src/specs/shares.md#transaction-shares).
 
-In order to prove that, we use a proofs called `EtxProof` which consist of the merkle proofs for all the shares contaniing transaction
+In order to prove that, we use a proofs called `EtxProof` which consist of the merkle proofs for all the shares containing transaction
 as well the offset to the beginning of the cosmos transaction in first of those shares.
 
-To venify them, we first iterate over rollup's blobs re-created from _completeness_ verification. We associate each blob
+To verify them, we first iterate over rollup's blobs re-created from _completeness_ verification. We associate each blob
 with its `EtxProof`. Then we verify that the etx proof holds the contiguous range of shares and verify the merkle proofs
 of it's shares with corresponding row_roots from `DataAvailabilityHeader`.
 If that process succeeds, we can extract the cosmos transaction data from the given proof. We need to check if the

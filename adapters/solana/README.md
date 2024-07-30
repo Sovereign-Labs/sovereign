@@ -216,7 +216,7 @@ pub struct Chunk {
     * `num_chunks`: Number of chunks that constitute the blob
     * `chunk_num`: The position in the sequence of chunks that form blob with `digest`. Used to order the chunks in order to reconstruct the blob
     * `actual_size`: The chunks are equal sized, so the final chunk has padding. `actual_size` is used to enable stripping out padding during reconstruction.
-      * We can do away with padding if we find that it's un-necessary.
+      * We can do away with padding if we find that it's unnecessary.
 * The `blockroot` program contains 3 instructions
   * Initialize - used to initialize the accounts
   * Clear - Used to clear the `ChunkAccumulator` account of any incomplete blobs.
