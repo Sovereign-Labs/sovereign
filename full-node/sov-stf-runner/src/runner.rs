@@ -141,7 +141,7 @@ where
         })
     }
 
-    /// Starts a RPC server with provided rpc methods.
+    /// Starts an RPC server with provided rpc methods.
     pub async fn start_rpc_server(
         &self,
         methods: RpcModule<()>,

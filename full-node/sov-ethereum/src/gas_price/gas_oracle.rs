@@ -215,7 +215,7 @@ impl<C: sov_modules_api::Context> GasPriceOracle<C> {
         // sort the transactions by effective tip
         // but first filter those that should be ignored
 
-        // get the transactions (block.transactions is a enum but we only care about the 2nd arm)
+        // get the transactions (block.transactions is an enum but we only care about the 2nd arm)
         let txs = match &block.transactions {
             BlockTransactions::Full(txs) => txs,
             _ => return Ok(None),

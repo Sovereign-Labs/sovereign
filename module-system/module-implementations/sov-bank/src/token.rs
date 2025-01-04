@@ -237,7 +237,7 @@ impl<C: sov_modules_api::Context> Token<C> {
 
     /// Creates a token from a given set of parameters.
     /// The `token_name`, `sender` address (as a `u8` slice), and the `salt` (`u64` number) are used as an input
-    /// to an hash function that computes the token address. Then the initial accounts and balances are populated
+    /// to a hash function that computes the token address. Then the initial accounts and balances are populated
     /// from the `address_and_balances` slice and the `total_supply` of tokens is updated each time.
     /// Returns a tuple containing the computed `token_address` and the created `token` object.
     pub(crate) fn create(
