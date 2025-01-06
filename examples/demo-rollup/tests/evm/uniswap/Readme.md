@@ -1,4 +1,4 @@
-### Uniswap demo folow these steps:
+### Uniswap demo follow these steps:
 
 1. Deploys `uniswap-v2` contracts.
 2. Adds liquidity to the USDT <> USDC pair.
