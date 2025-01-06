@@ -7,7 +7,7 @@
   - [Implementing Runtime: Pick Your Modules](#implementing-runtime-pick-your-modules)
     - [Implementing Hooks for the Runtime:](#implementing-hooks-for-the-runtime)
     - [Exposing RPC](#exposing-rpc)
-  - [Make Full Node Itegrations Simpler with the State Transition Runner:](#make-full-node-itegrations-simpler-with-the-state-transition-runner)
+  - [Make Full Node Integrations Simpler with the State Transition Runner:](#make-full-node-itegrations-simpler-with-the-state-transition-runner)
     - [Using State Transition Runner](#using-state-transition-runner)
   - [Wrapping Up](#wrapping-up)
 
